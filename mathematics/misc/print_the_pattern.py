@@ -35,7 +35,7 @@ Output
 """
 
 
-def print_pat(n):
+def get_pattern(n):
     pat_out = ""
     for row in range(n, 0, -1):
         row_out = ""
@@ -47,7 +47,7 @@ def print_pat(n):
 
 
 if __name__ == '__main__':
-    t = int(input())
-    for i in range(t):
-        n = int(input())
-        print(print_pat(n))
+    total_inputs = int(input())
+    for inp in range(total_inputs):
+        inp_num = int(input())
+        print(get_pattern(inp_num))
